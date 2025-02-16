@@ -41,6 +41,13 @@ img {
 /*? Variables */
 
 :root {
-   --Heading-font: "Playfair Display", serif;
+   --heading-font: "Playfair Display", serif;
    --paragraph-font: "Libre Franklin", serif;
+}
+
+/*? Header */
+
+h1,
+h2 {
+   font-family: var(--heading-font);
 }
