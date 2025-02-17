@@ -160,8 +160,8 @@ main {
    height: 65vh;
 }
 
-.cards-section h3 {
-   font-size: 35px;
+.cards-title {
+   font-size: 47px;
    text-align: center;
 }
 
@@ -220,4 +220,56 @@ figure figcaption {
    align-self: flex-end;
    margin-right: 4.5em;
    font-weight: 800;
+}
+
+/** Contact Section */
+.contact-section {
+   background-color: var(--bg-color-secondary);
+   min-height: 40vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contact-box {
+   display: flex;
+   gap: 5rem;
+   background-color: var(--bg-color-primary);
+   color: var(--bg-color-secondary);
+   padding: 2.5rem 4rem;
+   border-radius: 5px;
+}
+
+.phrase {
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-bottom: 12px;
+}
+
+.contact-btn {
+   background-color: var(--bg-color-primary);
+   color: var(--bg-color-secondary);
+   border: 2px solid var(--bg-color-secondary);
+   text-decoration: none;
+   padding: 0.5rem 2rem;
+   border-radius: 12px;
+
+   align-self: center;
+}
+
+.contact-btn:hover {
+   background-color: var(--bg-color-secondary);
+   color: var(--bg-color-primary);
+   border: 2px solid var(--bg-color-primary);
+}
+
+/*? Footer */
+
+footer {
+   min-height: 8vh;
+   background-color: var(--bg-color-primary);
+   color: var(--bg-color-secondary);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
