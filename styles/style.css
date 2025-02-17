@@ -149,9 +149,10 @@ ul li a:hover {
 /*? Main */
 
 main {
-   height: 65vh;
+   min-height: 65vh;
 }
 
+/** Cards  */
 .cards-section {
    padding: 1rem;
    background-color: var(--bg-color-secondary);
@@ -194,4 +195,29 @@ figure figcaption {
    font-size: 1.3rem;
    font-family: var(--paragraph-font);
    font-weight: 500;
+}
+
+/** Quote Section */
+
+.inspiring-section {
+   background-color: var(--bg-color-primary);
+   color: var(--bg-color-secondary);
+   min-height: 35vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.5em;
+}
+
+.inspiring-section p {
+   display: block;
+   font-family: var(--heading-font);
+   margin: 1.2rem;
+}
+
+#autor {
+   align-self: flex-end;
+   margin-right: 4.5em;
+   font-weight: 800;
 }
