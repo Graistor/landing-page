@@ -43,11 +43,100 @@ img {
 :root {
    --heading-font: "Playfair Display", serif;
    --paragraph-font: "Libre Franklin", serif;
+
+   --bg-color-primary: #344e41;
+   --bg-color-secondary: #ffe6a7;
+}
+
+/*? General */
+
+body {
+   min-height: 100vh;
+}
+
+p {
+   font-family: var(--paragraph-font);
 }
 
 /*? Header */
 
+header {
+   background-color: var(--bg-color-primary);
+   color: var(--bg-color-secondary);
+   min-height: 65vh;
+}
+
 h1,
 h2 {
    font-family: var(--heading-font);
+}
+
+h1 {
+   font-size: 26px;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   padding: 16px;
+}
+
+ul {
+   font-family: var(--heading-font);
+   display: flex;
+   gap: 14px;
+   align-items: center;
+}
+
+ul li a {
+   color: var(--bg-color-secondary);
+   text-decoration: none;
+   font-size: 19px;
+   font-weight: 400;
+}
+
+ul li a:hover {
+   color: #f7d88c;
+   text-decoration: underline;
+}
+
+.hero {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 80px;
+   gap: 5%;
+}
+
+.hero-main-text {
+   font-size: 48px;
+   margin-bottom: 1rem;
+}
+
+.hero-secondary-text {
+   font-size: 18px;
+}
+
+.hero-image {
+   border-radius: 15px;
+   -webkit-box-shadow: 2px 2px 5px 1px rgba(247, 216, 140, 1);
+   -moz-box-shadow: 2px 2px 5px 1px rgba(247, 216, 140, 1);
+   box-shadow: 2px 2px 5px 1px rgba(247, 216, 140, 1);
+}
+
+.sign-up-btn {
+   display: block;
+   background-color: var(--bg-color-secondary);
+   padding: 12px;
+   width: 27%;
+   text-align: center;
+   border-radius: 10px;
+   margin-top: 1rem;
+   color: var(--bg-color-primary);
+   text-decoration: none;
+   font-size: 1.2rem;
 }
